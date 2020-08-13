@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@android:color/darker_gray"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/textView_categoryCurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <ImageView
+            android:id="@+id/imageView_motivation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <Button
+            android:id="@+id/button_anotherQuote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_anotherQuote"
+            android:onClick="anotherQuote"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/textView_invisible"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/button_categoryChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="categoryChange"
+            android:text="@string/button_categoryChange"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView_invisible"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

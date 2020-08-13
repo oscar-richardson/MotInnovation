@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/numberPicker_categorySelect"/>
+
+    <TextView
+        android:id="@+id/textView_categoryPrompt"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_categoryPrompt"
+        android:layout_toLeftOf="@+id/textView_invisible"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/textView_invisible"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"/>
+
+    <NumberPicker
+        android:id="@+id/numberPicker_categorySelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView_invisible"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/textView_invisible"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/button_categoryConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_categoryConfirm"
+        android:onClick="categoryConfirm"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/numberPicker_categorySelect"/>
+
+    <TextView
+        android:id="@+id/textView_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

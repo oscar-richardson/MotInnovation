@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MotInnovation</string>
+    <string name="textView_welcome">Welcome!</string>
+    <string name="textView_categoryPrompt">Please select a category to get some motivational quotes!</string>
+    <string name="button_categoryConfirm">CONFIRM</string>
+    <string name="button_anotherQuote">GET ANOTHER QUOTE</string>
+    <string name="button_categoryChange">CHANGE CATEGORY</string>
+</resources>
